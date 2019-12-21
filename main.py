@@ -1,7 +1,6 @@
 from flask import Flask, request, abort ,render_template
 
 import os
-from src import get_info
 
 app = Flask(__name__)
 @app.route("/")
