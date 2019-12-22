@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<script>
-	alert("Hello world! from makita");
-</script>
 <html>
 <head>
    <heta charset="utf-8">
@@ -11,4 +8,23 @@
    <div id="sample">
    {{name}}
    </div>
+
+	 <input type="button" value="うぇ～い" onclick="setimg()">
+
+	 <div id="imgspace">
+	 </div>
 </body>
+
+<script>
+function setimg(){
+
+	// img要素を生成
+	var img = document.createElement('img');
+	// 画像パスを追加
+	img.src = './img/weei.png';
+	document.getElementById('imgspace').appendChild(img);
+
+}
+</script>
+
+</html>
