@@ -1,28 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lnag="ja">
 <head>
    <meta charset="utf-8">
-   <title>サンプル</title>
+   <title>てカムナ -シンプルなチャットアプリ-</title>
+   <link rel="stylesheet" href="../static/css/styles.css">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:700?family=M+PLUS+1p" rel="stylesheet">
 </head>
+
 <body>
 
-   <a href="list">このアプリどうなっていく？</a><br>
-   <input type="button" value="うぇ～い" onclick="setimg()">
-
-   <div id="imgspace">
-   </div>
+  <nav id="gnav" class="fixed">
+    <ul>
+      <li><a href="#What">What's this?</a></li>
+      <li><a href="#How">How to use</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+  </nav>
 
 </body>
 
 <script>
-function setimg(){
-
-	// img要素を生成
-	var img = document.createElement('img');
-	// 画像パスを追加
-	img.src = '../static/img/weei.png';
-	document.getElementById('imgspace').appendChild(img);
-
-}
 </script>
 </html>
