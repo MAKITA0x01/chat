@@ -5,14 +5,11 @@
    <title>サンプル</title>
 </head>
 <body>
-   <div id="sample">
-   {{name}}
+   <input type="button" value="うぇ～い" onclick="setimg()">
+
+   <div id="imgspace">
    </div>
 
-	 <input type="button" value="うぇ～い" onclick="setimg()">
-
-	 <div id="imgspace">
-	 </div>
 </body>
 
 <script>
@@ -21,10 +18,9 @@ function setimg(){
 	// img要素を生成
 	var img = document.createElement('img');
 	// 画像パスを追加
-	img.src = './img/weei.png';
+	img.src = '../static/img/weei.png';
 	document.getElementById('imgspace').appendChild(img);
 
 }
 </script>
-
 </html>
