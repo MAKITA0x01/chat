@@ -24,7 +24,7 @@ def list():
     return render_template('list.html')
 
 @app.route("/todo")
-def index():
+def todo():
     return render_template('todo.html')
 
 
