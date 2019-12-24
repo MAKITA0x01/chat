@@ -19,7 +19,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 10px;
+  margin: 10px 30px 10px 0px;
   padding: 0;
 }
 
@@ -63,4 +63,22 @@
 
 #gnav li a:hover::after {
   width: 100%;
+}
+
+.section-title {
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+.section-title-area {
+  text-align: center;
+}
+
+.section-title-area h3{
+  margin-top: 0px;
+  text-align: center;
+}
+
+.section:nth-of-type(odd) {
+    background-color: #f7f7f7;
 }
