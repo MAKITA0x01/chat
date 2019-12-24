@@ -3,6 +3,7 @@
 
   var vm = new Vue({
     el: '#app',
+    delimiters: ["[[", "]]"],
     data: {
       newItem: '',
       todos: [{
