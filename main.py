@@ -1,5 +1,5 @@
 from flask import Flask, request, abort ,render_template , \
-                  session ,redirect , url_for 
+                  session ,redirect , url_for
 
 import os
 
@@ -23,6 +23,10 @@ def index():
 def list():
     return render_template('list.html')
 
+@app.route("/todo")
+def index():
+    return render_template('todo.html')
+
 
 #---------------------------------------
 # @作成者    awa-chan
@@ -43,7 +47,7 @@ def login():
             # TODO: 項目に応じてエラーメッセージを設定する
             errors = ["ユーザ名は1文字以上ならなんでもOK","パスワードは 1234 です。"]
             return render_template('login.html',errors = errors)
-    
+
     return render_template('login.html')
 
 
@@ -52,7 +56,7 @@ def loginCheck(username , password):
     if password == "1234" and len(username) >= 1:
         return True
     return False
-    
+
 #---------------------------------------
 # @作成者    awa-chan
 # @作成日    2019/12/24
@@ -65,7 +69,7 @@ def loginCheck(username , password):
 def logout():
     session.pop("username", None)
     return redirect(url_for('index'))
-    
+
 #---------------------------------------
 # @作成者    awa-chan
 # @作成日    2019/12/24
