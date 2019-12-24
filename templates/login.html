@@ -1,0 +1,27 @@
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+    <title>Login</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+
+</head>
+    <div id="login">
+      <!-- あとで追加する -->
+      <ul class="err">
+      {% for error in errors %}
+      <li>{{error}}</li>
+      {% endfor %}
+      </ul>
+      <!-- ここまで -->
+      <form name="form-login" action="login" method="POST">
+        <span class="fontawesome-user"></span>
+          <input type="text" name="username" id="user" placeholder="Username">
+        
+        <span class="fontawesome-lock"></span>
+          <input type="password" name="password" id="pass" placeholder="Password">
+        
+        <input type="submit" value="Login">
+
+      </form>

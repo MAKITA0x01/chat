@@ -8,14 +8,20 @@
 </head>
 
 <body>
-
-  <nav id="gnav" class="fixed">
+   <br><br><a href="logout">ログアウト</a>
+   <nav id="gnav" class="fixed">
     <ul>
       <li><a href="#What">What's this?</a></li>
       <li><a href="#How">How to use</a></li>
       <li><a href="#Contact">Contact</a></li>
+      <!-- セッションにusernameが存在するかどうかで表示内容を変更 -->
+      {% if session.get('username') == None %}
+      <li><a href="login">Login</li>
+      {% else %}
+      <li><a href="myPage">MyPage</li>
+      {%endif %}
     </ul>
-  </nav>
+   </nav>
 
   <section class="section" id="contact">
         <div class="inner">
