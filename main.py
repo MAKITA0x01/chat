@@ -23,7 +23,7 @@ def index():
 def list():
     return render_template('list.html')
 
-@app.route("/todo")
+@app.route("/todo", methods=["GET", "POST"])
 def todo():
     return render_template('todo.html')
 
