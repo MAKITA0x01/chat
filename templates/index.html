@@ -16,9 +16,9 @@
       <li><a href="#Contact">Contact</a></li>
       <!-- セッションにusernameが存在するかどうかで表示内容を変更 -->
       {% if session.get('username') == None %}
-      <li><a href="login">Login</li>
+      <li><a href="login">Login</a></li>
       {% else %}
-      <li><a href="myPage">MyPage</li>
+      <li><a href="myPage">MyPage</a></li>
       {%endif %}
     </ul>
    </nav>
